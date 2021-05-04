@@ -3,3 +3,7 @@ return check;});$('.validate-form .input100').each(function(){$(this).focus(func
 else{if($(input).val().trim()==''){return false;}}}
 function showValidate(input){var thisAlert=$(input).parent();$(thisAlert).addClass('alert-validate');}
 function hideValidate(input){var thisAlert=$(input).parent();$(thisAlert).removeClass('alert-validate');}})(jQuery);
+
+// function mensaje() {
+//     alert('Formulario enviado...');
+// }

@@ -3,7 +3,7 @@ $(document).ready(
 );
 
 function cargarApi() {
-    if (window.location.pathname === "/trabajo-progra-web/index.html") {
+    if (window.location.pathname === "/index.html") {
         $.getJSON('https://mindicador.cl/api', function (data) {
             var dailyIndicators = data;
             var indicadores = "Indicadores Diarios: Bitcoin " + formatoMoneda(dailyIndicators.bitcoin.valor * dailyIndicators.dolar.valor) + " --- ";
@@ -21,7 +21,7 @@ function cargarApi() {
         }).fail(function () {
             console.log('Error al consumir la API!');
         })
-    } else if (window.location.pathname === "/trabajo-progra-web/clima.html") {
+    } else if (window.location.pathname === "/clima.html") {
         $.getJSON('https://api.gael.cloud/general/public/clima', function (data) {
             var clima = new Array();
             clima = data;

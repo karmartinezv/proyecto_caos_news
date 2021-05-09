@@ -42,29 +42,164 @@
                             <a class="nav-link" href="index.html">Portada</a>
                         </li>
                     </ul>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-2">
+                            <div class="container">
+                                <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal" data-bs-whatever="@mdo">Inicia sesion</button>
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Inicia sesion</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="recipient-name"
+                                                            class="col-form-label">Usuario:</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="recipient-name"
+                                                            class="col-form-label">Contraseña:</label>
+                                                        <input type="password" class="form-control" id="recipient-name">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Cerrar</button>
+                                                <button type="button" class="btn btn-primary">Entrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-2">
+                            <div class="container">
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    Registrate
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="recipient-name"
+                                                            class="col-form-label">Nombre:</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="recipient-name"
+                                                            class="col-form-label">Apellido:</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="recipient-name"
+                                                            class="col-form-label">Email:</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="recipient-name"
+                                                            class="col-form-label">Usuario:</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="recipient-name"
+                                                            class="col-form-label">Contraseña:</label>
+                                                        <input type="password" class="form-control" id="recipient-name">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="recipient-name" class="col-form-label">Reingrese su contraseña:</label>
+                                                        <input type="password" class="form-control" id="recipient-name">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Cerrar</button>
+                                                <button type="button" class="btn btn-primary">Registrarse</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </li>
+                    </ul>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item px-2">
                             <a class="nav-link" href="clima.html">Clima Actual</a>
                         </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="nacional.html">Nacional</a>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">Noticias</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item px-2">
+                                    <a class="nav-link text-dark" href="nacional.html">Nacional</a>
+                                </li>
+                                <li class="nav-item px-2">
+                                    <a class="nav-link text-dark" href="internacional.html">Internacional</a>
+                                </li>
+                                <li class="nav-item px-2">
+                                    <a class="nav-link text-dark" href="cultura.html">Cultura</a>
+                                </li>
+                                <li class="nav-item px-2">
+                                    <a class="nav-link text-dark" href="deporte.html">Deportes</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="internacional.html">Internacional</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="cultura.html">Cultura</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="deporte.html">Deportes</a>
-                        </li>
+
                         <li class="nav-item px-2">
                             <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-info" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
         </nav>
+
+        <div class="container">
+            <div class="row"></div>
+        </div>
+
+        <div id="sombra">
+            <div class="container-fluid bg-secondary">
+                <div class="row">
+                    <h1 class="text-center fw-light text-white fs-149">Caos News, la otra mirada</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <marquee behavior="" direction="left">
+                    <span id="indicadoresDiarios" class="fs-6 fw-normal"></span>
+                </marquee>
+            </div>
+        </div>
     </header>
     <main>
         <div class="card">
@@ -219,8 +354,106 @@
             </div>
         </div>
 
+        <div class="container">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            <strong>La ratificación del veto de Donald Trump </strong>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            <img src="img/99.jpg" class="float-start img-thumbnail w-25 h-25" alt="">
+                            <p> El magnate Donald Trump sigue cosechando derrotas. El panel de supervisión independiente
+                                de
+                                Facebook decidió mantener el veto impuesto por la plataforma al expresidente
+                                estadounidense.
+                                La junta consideró que sus acciones y comentarios del 6 de enero, publicados antes de
+                                que
+                                sus seguidores se tomaran el Capitolio de Estados Unidos, crearon un ambiente que
+                                incentivó
+                                la violencia.</p>
+                            <p>“Dada la seriedad de las violaciones y del persistente riesgo de violencia, estaba
+                                justificado que Facebook suspendiera las cuentas de Trump el 6 de enero y extendiera esa
+                                suspensión el 7 de enero”, dijo el panel tras su revisión. Pero recalcó que “no fue
+                                apropiado que Facebook impusiera una pena indeterminada y estandarizada de suspensión
+                                indefinida”, por lo que le pidió a la red social que se hiciera cargo del asunto para
+                                que optara por una respuesta proporcionada. Mark Zuckerberg, propietario de la
+                                plataforma, tendrá seis meses para decidir si continúa con la suspensión del
+                                expresidente o establece un límite de la prohibición, debido a que la situación actual
+                                viola sus propias reglas. Trump emitió un comunicado horas después de conocer la
+                                decisión. “Lo que Facebook, Twitter y Google han hecho es una vergüenza absoluta y un
+                                bochorno para nuestro país”, dijo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            <strong>Wall Street cerró en verde, pese al aumento en la tasa de desempleo en Estados
+                                Unidos</strong>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            <p>Wall Street cerró este viernes en verde luego de que el Dow Jones Industrial Average, el
+                                principal indicador del parqué, terminara la sesión con una subida del 0,66 % hasta los
+                                34.776,44 puntos. Por su parte, el S&P 500 aumentó un 0,74 % hasta las 4.232,51 unidades
+                                y el Nasdaq ascendió un 0,88 % hasta los 13.752,24 enteros.
+
+                                El comportamiento en los índices de la Bolsa de Nueva York se da después de conocerse
+                                que la tasa de desempleo en Estados Unidos subió al 6,1 % en abril, en comparación con
+                                el mes anterior, cuando el dato llegó al 6 %.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            <strong>Al menos 30 personas murieron y decenas resultaron heridas- gran parte ellos,
+                                menores de edad- tras una explosión cerca de una escuela secundaria para niñas en Kabul,
+                                la capital de Afganistán.</strong>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <img src="img/98.jpg" class="w-50 h-50 float-end" alt="">
+                            <p>La explosión ocurrió cuando un grupo de estudiantes salía del instituto este sábado,
+                                informaron autoridades del país asiático.
+
+                                Según los corresponsales de la BBC, varias imágenes difundidas en las redes sociales
+                                muestran mochilas escolares abandonadas en las calles de la capital afgana.
+
+                                La mayoría de las personas que resultaron heridas eran niñas, de acuerdo con una
+                                portavoz del Ministerio de Educación.
+
+                                Hasta el momento, ningún grupo se ha atribuido el ataque.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
     <section>
         <section class="social">
@@ -285,8 +518,6 @@
             <h3>CaosNews</h3>
         </section>
     </footer>
-
-
 
 </body>
 

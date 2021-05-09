@@ -26,4 +26,12 @@
     padding: 5px;
     display: flex;
     flex-wrap: wrap;
+    
+}
+.form-control {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    
 }

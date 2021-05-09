@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
@@ -22,7 +25,7 @@
 </head>
 
 <body>
-    <header>
+     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0 mb-0">
             <div class="container">
                 <img src="img/ico.png" alt="CaosNews Logo" class="nav-brand" width="50" height="50">
@@ -38,90 +41,271 @@
                             <a class="nav-link" href="index.html">Portada</a>
                         </li>
                     </ul>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-2">
+                            <div class="container">
+                                <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Inicia sesion</button>
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Inicia sesion</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">Usuario:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">Contraseña:</label>
+                                                <input type="password" class="form-control" id="recipient-name">
+                                            </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                            <button type="button" class="btn btn-primary">Entrar</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-2">
+                            <div class="container">
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Registrate
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">Nombre:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">Apellido:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">Email:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">Usuario:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">Contraseña:</label>
+                                                <input type="password" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">Reingrese su contraseña:</label>
+                                                <input type="password" class="form-control" id="recipient-name">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary">Registrarse</button>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </li>
+                    </ul>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item px-2">
                             <a class="nav-link" href="clima.html">Clima Actual</a>
                         </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="nacional.html">Nacional</a>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">Noticias</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item px-2">
+                                    <a class="nav-link text-dark" href="nacional.html">Nacional</a>
+                                </li>
+                                <li class="nav-item px-2">
+                                    <a class="nav-link text-dark" href="internacional.html">Internacional</a>
+                                </li>
+                                <li class="nav-item px-2">
+                                    <a class="nav-link text-dark" href="cultura.html">Cultura</a>
+                                </li>
+                                <li class="nav-item px-2">
+                                    <a class="nav-link text-dark" href="deporte.html">Deportes</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="internacional.html">Internacional</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="cultura.html">Cultura</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="deporte.html">Deportes</a>
-                        </li>
+
                         <li class="nav-item px-2">
                             <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
+                    
                 </div>
             </div>
         </nav>
-    </header>
 
-    <body>
-        <div class="bg-contact100" style="background-image: url('img/bg-01.jpg');">
-            <div class="container-contact100">
-                <div class="wrap-contact100">
-                    <div class="contact100-pic js-tilt" data-tilt>
-                        <img src="img/img-01.png" alt="IMG">
-                    </div>
-                    <form class="contact100-form validate-form">
-                        <span class="contact100-form-title">
-                            <h2 class="form-titulo">Contactenos</h2>
-                        </span>
-
-
-                        <div class="wrap-input100 validate-input">
-                            <input class="input100" id="validationTooltip01" type="text" name="name" placeholder="Nombre" required>
-                            <span class="symbol-input100">
-                                <i class="bi bi-person-fill"></i>
-                            </span>
-                            <div class="invalid-feedback">
-                                Nombre es requerido.
-                            </div>
-                        </div>
-                        <div class="wrap-input100 validate-input">
-                            <input class="input100" id="validationTooltip02" type="text" name="email" placeholder="Email" required>
-                            <span class="symbol-input100">
-                                <i class="bi bi-envelope"></i>
-                            </span>
-                            
-                        </div>
-                        <div class="wrap-input100 validate-input">
-                            <input class="input100" id="validationTooltip03" type="text" name="titulo" placeholder="Titulo" required>
-                            <span class="symbol-input100">
-                                <i class="bi bi-card-heading"></i>
-                            </span>
-                            
-                        </div>
-
-                        <div class="wrap-input100 validate-input">
-                            <textarea class="input100" id="validationTooltip04" name="message" placeholder="Mensaje" required></textarea>
-                            
-                        </div>
-
-                        <div class="container-contact100-form-btn">
-                            <button class="contact100-form-btn">
-                                Enviar
-                            </button>
-                        </div>
-                    </form>
+        <div id="sombra">
+            <div class="container-fluid bg-secondary">
+                <div class="row">
+                    <h1 class="text-center fw-light text-white">Caos News, la otra mirada</h1>
                 </div>
             </div>
         </div>
 
+    </header>
+
+    <body>
+        <div class="bg-contact100">
+            <div class="container-contact100">
+                <div class="wrap-contact100">
+                    <div class="contact100-pic js-tilt" data-tilt>
+                        <img src="img/fomulario.png" alt="IMG">
+                    </div>
+                    
+                    <form class="contact100-form validate-form needs-validation" novalidate>
+                        <span class="contact100-form-title">
+                            <h2 class="form-titulo">Escribenos tu noticia</h2>
+                        </span>
+                        <div class="wrap-input100 validate-input">
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre" required>
+                            <div class="invalid-feedback">
+                            Nombre es requerido.
+                            </div>
+                        </div>
+                        <div class="wrap-input100 validate-input">
+                            <input type="text" class="form-control" id="validationCustom02" placeholder="Apellido" required>
+                            <div class="invalid-feedback">
+                            Apellido es requerido.
+                            </div>
+                        </div>
+                        <div class="wrap-input100 validate-input">
+                            <input type="text" class="form-control" id="validationCustom03" placeholder="Email" required>
+                            <div class="invalid-feedback">
+                            Email debe ser abc@gmail.com.
+                            </div>
+                        </div>
+                        <div class="wrap-input100 validate-input">
+                            <input type="text" class="form-control" id="validationCustom04" placeholder="Titulo" required>
+                            <div class="invalid-feedback">
+                            Titulo es requerido.
+                            </div>
+                        </div>
+                        <div class="wrap-input100 validate-input">
+                            <textarea type="text" class="form-control" id="validationCustom05" placeholder="Mensaje" required></textarea>
+                            <div class="invalid-feedback">
+                            Mensaje es requerido.
+                            </div>
+                        </div>
+
+                        <div class="container-contact100-form-btn">
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-info" type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-links">
+
+            <div class="footer-container">
+                <ul>
+                    <li>
+                        <h3>Principal</h3>
+                    </li>
+                    <li>
+                        <h6><a href="index.html" class="link-info">Portada</a></h6>
+                    </li>
+                    <li>
+                        <h6><a href="clima.html" class="link-info">Clima Actual</a></h6>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>Noticias</h3>
+                    </li>
+                    <li>
+                        <h6><a href="nacional.html" class="link-info">Nacional</a></h6>
+                    </li>
+                    <li>
+                        <h6><a href="internacional.html" class="link-info">Internacional</a></h6>
+                    </li>
+                    <li>
+                        <h6><a href="cultura.html" class="link-info">Cultura</a></h6>
+                    </li>
+                    <li>
+                        <h6><a href="deporte.html" class="link-info">Deportes</a></h6>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>Contactanos</h3>
+                    </li>
+                    <li>
+                        <h6><a href="contacto.html" class="link-info" target="_blank">Contacto</a></h6>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </section>
+
+        <footer>
+            <section class="footer">
+                <h3>CaosNews</h3>
+            </section>
+        </footer>
+
         <script src="js/script.js"></script>
+        <script src="js/main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
             crossorigin="anonymous"></script>
         <script src="js/lib/jquery.js"></script>
-        <script>
+
+        <script class="Javascript">
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+                })
+            })()
         </script>
+        
+        
     </body>
 
 </html>
